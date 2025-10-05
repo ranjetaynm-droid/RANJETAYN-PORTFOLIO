@@ -1,19 +1,22 @@
-// Smooth scrolling for nav links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+// Mobile menu toggle
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
 });
 
-// Simple fade-in animation
-const sections = document.querySelectorAll("section");
-window.addEventListener("scroll", () => {
-  const trigger = window.innerHeight / 1.2;
-  sections.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-    if (top < trigger) section.classList.add("visible");
-  });
+// Contact form function
+const form = document.getElementById("contactForm");
+const responseMsg = document.getElementById("responseMsg");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+
+  responseMsg.textContent = Salamat, 
+  responseMsg.style.color = "#00bcd4";
+
+  form.reset();
 });
