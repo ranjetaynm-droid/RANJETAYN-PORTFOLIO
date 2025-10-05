@@ -1,73 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Portfolio ni RANJET AYN MULINGBAYAN</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation -->
   <header>
-    <nav class="navbar">
-      <h1 class="logo">MyPortfolio</h1>
+    <nav>
+      <h1 class="logo">RANJET AYN</h1>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="menu-btn">☰</button>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h2>Hello, I'm <span class="highlight">RANJET AYN MULINGBAYAN</span></h2>
-      <p>BSIT | 2 | B</p>
-      <a href="#projects" class="btn">View My Work</a>
+  <section id="home" class="home">
+    <div class="home-content">
+      <h2>Hi! MY NAME IS <span>RANJET AYN MULINGBAYAN</span></h2>
+      <p>STUDENT - FROM - BSIT 2-B</p>
+      <a href="#projects" class="btn">SEE MY MIDTERM PROJECT</a>
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="about">
-    <h2>About Me</h2>
+    <h2>ABOUT ME</h2>
     <p>
-      HELLO I'M RANJET  AYN L MULINGBYAN FROM BSIT  2-B IM FROM ABRA DE ILOG OCC.MINDORO 19 YEARS OLD , BUSINESS MINDED , GOOD STUDENT , ETC
+      HI I'M <strong>RANJET AYN MULINGBAYAN</strong>. FROM BSIT 2-B I WISH I WAS SPECIAL BUT I AM CREEP
+      
     </p>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects" class="projects">
-    <h2>project</h2>
-    <div class="project-card">
+    <h2>MIDTERM PROJECTS</h2>
+    <div class="project-grid">
       <div class="project-card">
-        <h3>TEACHER</h3>
-        <p>ARCHELLY BAUTISTA</p>
-        <a href="#" class="btn">View</a>
+        <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+        <h3>Personal Portfolio</h3>
+        
       </div>
       <div class="project-card">
-        <h3>SUBJECT</h3>
-        <p>FLATFORM TECHNOLOGIES</p>
-        <a href="#" class="btn">View</a>
+        <img src="https://via.placeholder.com/300x200" alt="Project 2" />
+        <h3>QUIZ</h3>
+      
       </div>
       <div class="project-card">
-        <h3>GRADES</h3>
-        <p>85 </p>
-        <a href="#" class="btn">View</a>
+        <img src="https://via.placeholder.com/300x200" alt="Project 3" />
+        <h3>GRADE </h3>
+        
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Let's connect! Reach out to me via email or social links below.</p>
-    <a href="ranjetaynm@gmail.com" class="btn">Email Me</a>
+    <h2>CONTACS</h2>
+    <form id="contactForm">
+      <input type="JET" id="name" placeholder="JET" required />
+      <input type="ranjetaynm@gmail.com" id="email" placeholder="ranjetaynm@gmail.com" required />
+      <textarea id="type (pogi ako)" placeholder="type (pogi ako)" required></textarea>
+      <button type="submit" class="btn">Ipadala</button>
+    </form>
+    <p id="responseMsg"></p>
   </section>
 
-  <!-- Footer -->
-
+  <footer>
+    <p>© 2025 RANJET AYN MULINGBAYAN </p>
   </footer>
 
   <script src="script.js"></script>
